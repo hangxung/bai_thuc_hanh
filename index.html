@@ -1,256 +1,286 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Imaginary Store</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGym Career - Giải Pháp Việc Làm Ngành IT</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    
+    <style>
+        .navbar {
+            background-color: #1c2331 !important;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #1c2331 0%, #2e4057 100%);
+            color: white;
+            padding: 90px 0 70px 0;
+        }
+        .section-heading {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1c2331;
+        }
+        .feature-icon {
+            font-size: 2.8rem;
+            color: #4285f4;
+            margin-bottom: 15px;
+        }
+        .card {
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-custom-primary {
+            background-color: #ff3547 !important;
+            color: white !important;
+        }
+    </style>
 </head>
-
 <body>
-<header id="top">
-	<div class="fix-size">
-    	<p class="c9 left">
-        	Welcome Thomas. <a href="">[ Manage Account ]</a>
-        </p>
-        <p class="c3 left">
-        	<a href="#main-nav" class="hide"><img src="images/nav-btn.png" alt="button" /></a>
-            <a href="" class="right">Sign out</a>
-        </p>
-    </div>
-    <div class="clear"></div>
-</header><!-- header -->
 
-<nav>
-	<div class="fix-size">
-    	<ul class="c5 left show">
-        	<li><a href="">Categories</a></li>
-            <li><a href="">Top Products</a></li>
-            <li><a href="">Carts</a></li>
-        </ul>
-        <a href="" class="c2 left c">
-        	<img src="images/logo.png" alt="logo" />
-        </a>
-        <form action="#" class="c5 left show">
-        	<input type="search" placeholder="search anything in store" required />
-            <input type="submit" value="search" />
-        </form>
-    </div>
-    <div class="clear"></div>
-</nav><!-- nav -->
+    <!-- 1. HEADER / NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#">
+                <i class="fas fa-code text-danger mr-2"></i>CodeGym <span class="text-primary">Career</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#hero">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Giá trị cốt lõi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programs">Chương trình đào tạo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#register">Đăng ký tư vấn</a>
+                    </li>
+                </ul>
+                <a href="#register" class="btn btn-danger btn-sm rounded-pill waves-effect waves-light">Tư vấn ngay</a>
+            </div>
+        </div>
+    </nav>
 
-<section id="banner">
-	<div class="fix-size">
-    	<section class="c9 left c">
-        	<p>Top Products / This Week / Disc / Bach</p>
-            <h1>J.S. Bach Top 25 Collection</h1>
-        </section>
-        <aside class="c3 left c">
-        	<button>Add to Cart</button>
-            <p>In Stock. Estimated Delivery in 5 days.</p>
-        </aside>
-    </div>
-    <div class="clear"></div>
-</section><!-- banner -->
+    <!-- 2. HERO SECTION -->
+    <section id="hero" class="hero-section text-center text-md-left">
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-4">
+                    <h1 class="display-4 font-weight-bold">Bắt Đầu Sự Nghiệp Lập Trình Viên Chuyên Nghiệp</h1>
+                    <p class="lead my-4">
+                        CodeGym Career mang đến giải pháp đào tạo thực chiến kết hợp cam kết việc làm 100% cho học viên ngành Công nghệ Thông tin.
+                    </p>
+                    <a href="#register" class="btn btn-custom-primary btn-lg ml-0 waves-effect waves-light">
+                        <i class="fas fa-rocket mr-2"></i>Tham gia ngay
+                    </a>
+                    <a href="#programs" class="btn btn-outline-white btn-lg waves-effect waves-light">
+                        Xem lộ trình
+                    </a>
+                </div>
+                <div class="col-md-5 mb-4 text-center">
+                    <img src="https://mdbootstrap.com/img/illustrations/app-user-colour.svg" alt="CodeGym Career Illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="main">
-	<div class="fix-size">
-    	<section class="c9 left c">
-        	<h3>Limited Discount: <del>$24.99</del> $19.99</h3>            
-            <div class="trans right">
-                <div class="cover">
-                    <div class="face">
-                        <p class="on-sale">ON SALE</p>
-                    </div>
-                    <div class="face back">
-                        <b>J.S. Bach - Top 25 Collection</b>
-                        <ol>
-                            <li>Violin Concerto in A minor</li>
-                            <li>Christmas Oratorio</li>
-                            <li>Jesu Joy of Man's Desiring</li>
-                            <li>Suite No. 3 in D major</li>
-                            <!-- text -->
-                        </ol>
+    <!-- 3. FEATURES SECTION (LỢI ÍCH) -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-heading">Tại Sao Chọn CodeGym Career?</h2>
+                <p class="text-muted">Mô hình đào tạo Coding Bootcamp hàng đầu giúp bạn tăng tốc sự nghiệp IT.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 p-4 text-center shadow-sm border-0">
+                        <div class="card-body">
+                            <i class="fas fa-laptop-code feature-icon"></i>
+                            <h4 class="font-weight-bold my-3">Thực Chiến 100%</h4>
+                            <p class="text-muted">Học qua dự án thực tế, tích lũy kinh nghiệm làm việc ngay trong quá trình học.</p>
+                        </div>
                     </div>
                 </div>
-            </div><!-- trans -->
-            
-            <p>
-            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id diam metus. Duis tellus augue, malesuada ac lacinia eu, faucibus quis sem. Morbi at metus nisi, at facilisis sem. Nullam sit amet orci lorem. Aenean blandit tellus a ante malesuada ut malesuada lectus tristique. Suspendisse potenti. Donec urna quam, tempor ut dignissim sed, laoreet quis eros. In hac habitasse platea dictumst. Nunc tempus, risus non viverra ultrices, nisl purus ornare tellus, ut scelerisque nunc sem non turpis. Phasellus dictum interdum enim, non viverra odio pharetra id. Duis ut molestie purus. Morbi lectus lectus, ultricies eu congue et, posuere id felis. Fusce elementum felis lacinia mi convallis venenatis. Donec molestie tempor ligula, quis euismod ipsum posuere a. Donec id mi erat, at volutpat massa. Suspendisse tempor, massa eget venenatis malesuada, ipsum turpis suscipit risus, id fermentum dui purus eget nisi.<!-- text -->
-            </p>
-            
-            <h2>Previews</h2>
-            <ul class="preview">
-            	<li class="left"><a href="">
-                	<div class="c3 left">
-                    	<p class="title">PREVIEW</p>
-                        <div class="circle"><div class="triangle">&#9658;</div></div>
-                    </div>
-                    <div class="c9 left">
-                    	<b>Violin Concerto in A minor</b><!-- text -->
-                        <small>Duration: 3:50</small>
-                    </div>
-                    <div class="clear"></div>
-                </a></li><!-- element -->
-                
-                <li class="right"><a href="">
-                	<div class="c3 left">
-                    	<p class="title">PREVIEW</p>
-                        <div class="circle"><div class="triangle">&#9658;</div></div>
-                    </div>
-                    <div class="c9 left">
-                    	<b>Christmas Oratorio</b><!-- text -->
-                        <small>Duration: 2:26</small>
-                    </div>
-                    <div class="clear"></div>
-                </a></li><!-- element -->
-                <li class="clear"></li>
-                
-                <li class="left"><a href="">
-                	<div class="c3 left">
-                    	<p class="title">PREVIEW</p>
-                        <div class="circle"><div class="triangle">&#9658;</div></div>
-                    </div>
-                    <div class="c9 left">
-                    	<b>Jesu Joy of Man's Desiring</b><!-- text -->
-                        <small>Duration: 3:27</small>
-                    </div>
-                    <div class="clear"></div>
-                </a></li><!-- element -->
-                
-                <li class="right"><a href="">
-                	<div class="c3 left">
-                    	<p class="title">PREVIEW</p>
-                        <div class="circle"><div class="triangle">&#9658;</div></div>
-                    </div>
-                    <div class="c9 left">
-                    	<b>Suite No. 3 in D major</b><!-- text -->
-                        <small>Duration: 3:28</small>
-                    </div>
-                    <div class="clear"></div>
-                </a></li><!-- element -->
-            </ul>
-            <div class="clear"></div>
-            
-            <h2>Top Reviews</h2>
-            <blockquote>
-            	<div class="quote">&ldquo;</div>
-                <p>
-                	Masterpiece! The must-have music you couldn't miss.<small>- S.H. Mak</small>
-                </p>
-            </blockquote>
-            
-            <blockquote>
-            	<div class="quote">&ldquo;</div>
-                <p>
-                	Buy it now and you would not regrad. <small>- Johnahtan</small>
-                </p>
-            </blockquote>
-        </section>
-        <aside class="c3 left c">
-        	<h3>About J.S. Bach</h3>
-            <p class="about">
-            	Nullam sit amet orci lorem. Aenean blandit tellus a ante malesuada ut malesuada lectus tristique. Suspendisse potenti. Donec urna quam, tempor ut dignissim sed, laoreet quis eros. In hac habitasse platea dictumst. Nunc tempus, risus non viverra ultrices, nisl purus ornare tellus.
-            </p>
-            
-            <h3>Recommends</h3>
-            <div class="aside-cover">
-            	<div class="trans">
-                	<div class="cover">
-                    	<div class="face">
-                        </div>
-                        <div class="face back">
-                        	<b>J.S. Bach - Top 25 Collection</b>
-                            <ol>
-                            	<li>Violin Concerto in A minor</li>
-                                <li>Christmas Oratorio</li>
-                                <li>Jesu Joy of Man's Desiring</li>
-                                <li>Suite No. 3 in D major</li>
-                            	<!-- text -->
-                            </ol>
-                            <button>Go to Album</button>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 p-4 text-center shadow-sm border-0">
+                        <div class="card-body">
+                            <i class="fas fa-user-check feature-icon text-success"></i>
+                            <h4 class="font-weight-bold my-3">Cam Kết Việc Làm</h4>
+                            <p class="text-muted">Ký hợp đồng cam kết việc làm bằng văn bản ngay khi nhập học.</p>
                         </div>
                     </div>
-                </div><!-- trans -->
-            	<p>Bach Gold Collection T-Shirt</p>
-            </div><!-- aside cover -->
-            
-            <div class="aside-cover">
-            	<div class="trans">
-                	<div class="cover">
-                    	<div class="face">
-                        </div>
-                        <div class="face back">
-                        	<b>J.S. Bach - Top 25 Collection</b>
-                            <ol>
-                            	<li>Violin Concerto in A minor</li>
-                                <li>Christmas Oratorio</li>
-                                <li>Jesu Joy of Man's Desiring</li>
-                                <li>Suite No. 3 in D major</li>
-                            	<!-- text -->
-                            </ol>
-                            <button>Go to Album</button>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 p-4 text-center shadow-sm border-0">
+                        <div class="card-body">
+                            <i class="fas fa-building feature-icon text-warning"></i>
+                            <h4 class="font-weight-bold my-3">Mạng Lưới Doanh Nghiệp</h4>
+                            <p class="text-muted">Kết nối trực tiếp với hơn 200+ doanh nghiệp đối tác tuyển dụng CNTT lớn.</p>
                         </div>
                     </div>
-                </div><!-- trans -->
-                <p>Bach Gold Collection</p>
-            </div><!-- aside cover -->
-        </aside>
-    </div>
-    <div class="clear"></div>
-    
-    <nav id="main-nav" class="c12 c hide">
-    	<ul>
-        	<li><a href="#top"><span class="arrow"></span>Back to Top</a></li>
-            <li><a href="">Categories</a></li>
-            <li><a href="">Top Products</a></li>
-            <li><a href="">Carts</a></li>
-            <li><a href="">Your Account</a></li>
-        </ul>
-        <form action="#">
-        	<input type="search" placeholder="search in store" required />
-            <input type="submit" value="go" />
-        </form>
-    </nav><!-- main nav -->
-    <div class="clear"></div>
-</section><!-- main -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="info">
-	<div class="fix-size">
-    	<div class="c4 left c">
-        	<h3>Follow Us</h3>
-            <p>
-            	Lorem ipsum dolor sit amet.
-            </p>
+    <!-- 4. PROGRAMS SECTION (CHƯƠNG TRÌNH) -->
+    <section id="programs" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-heading">Các Khóa Học Nổi Bật</h2>
+                <p class="text-muted">Lựa chọn lộ trình phù hợp với định hướng sự nghiệp của bạn.</p>
+            </div>
+            <div class="row">
+                <!-- Course 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Java Developer">
+                            <a href="#register">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Java Web Developer</h4>
+                            <p class="card-text text-muted">Trở thành lập trình viên Backend Java chuyên nghiệp với hệ sinh thái Spring Framework.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge badge-primary p-2">Thời gian: 5 Tháng</span>
+                                <a href="#register" class="btn btn-primary btn-sm waves-effect waves-light">Đăng ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/44.jpg" alt="Frontend Developer">
+                            <a href="#register">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Frontend ReactJS</h4>
+                            <p class="card-text text-muted">Xây dựng giao diện ứng dụng Web hiện đại, tối ưu trải nghiệm người dùng với ReactJS.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge badge-info p-2">Thời gian: 4 Tháng</span>
+                                <a href="#register" class="btn btn-primary btn-sm waves-effect waves-light">Đăng ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/45.jpg" alt="Fullstack Developer">
+                            <a href="#register">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Fullstack Web Developer</h4>
+                            <p class="card-text text-muted">Làm chủ cả Frontend & Backend, phát triển toàn diện hệ thống phần mềm quy mô lớn.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge badge-danger p-2">Thời gian: 6 Tháng</span>
+                                <a href="#register" class="btn btn-primary btn-sm waves-effect waves-light">Đăng ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="c4 left c">
-        	<h3>Newsletter</h3>
-            <p>
-            	Faucibus quis sem. Morbi at metus nisi, at facilisis sem. Nullam sit amet orci lorem. Aenean blandit tellus a ante malesuada ut malesuada.
-            </p>
-            <form action="#">
-            	<input type="email" placeholder="your email" required />
-                <input type="submit" value="Subscribe" />
-            </form>
-        </div>
-        <div class="c4 left c">
-        	<h3>Refund Policy</h3>
-        	<p>
-            	Morbi lectus lectus, ultricies eu congue et, posuere id felis. Fusce elementum felis lacinia mi convallis venenatis. Donec molestie tempor ligula, quis euismod ipsum posuere a. Donec id mi erat, at volutpat massa.
-            </p>
-        </div>
-    </div>
-    <div class="clear"></div>
-</section><!-- info -->
+    </section>
 
-<footer>
-	<div class="fix-size">
-    	<div class="c12 c">
-        	<span>&copy; 2013. Imaginary Store.</span>
-            <span class="right">Handmade in Leipzig, Germany.</span>
+    <!-- 5. REGISTER FORM SECTION -->
+    <section id="register" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body p-5">
+                            <h3 class="font-weight-bold text-center mb-4">Đăng Ký Tư Vấn Lộ Trình</h3>
+                            <form>
+                                <div class="md-form">
+                                    <i class="fas fa-user prefix text-muted"></i>
+                                    <input type="text" id="form-name" class="form-control">
+                                    <label for="form-name">Họ và tên</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-envelope prefix text-muted"></i>
+                                    <input type="email" id="form-email" class="form-control">
+                                    <label for="form-email">Email liên hệ</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-phone prefix text-muted"></i>
+                                    <input type="text" id="form-phone" class="form-control">
+                                    <label for="form-phone">Số điện thoại</label>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-custom-primary btn-block rounded-pill waves-effect waves-light">
+                                        Gửi Yêu Cầu Tư Vấn
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="clear"></div>
-</footer><!-- footer -->
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="page-footer font-small navbar-dark pt-4" style="background-color: #1c2331;">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase font-weight-bold text-white">CodeGym Career</h5>
+                    <p class="text-muted">Hệ thống đào tạo lập trình hiện đại, uy tín hàng đầu Việt Nam.</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase font-weight-bold text-white">Liên kết</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#hero" class="text-muted">Trang chủ</a></li>
+                        <li><a href="#features" class="text-muted">Tính năng</a></li>
+                        <li><a href="#programs" class="text-muted">Chương trình</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase font-weight-bold text-white">Liên hệ</h5>
+                    <p class="text-muted mb-1"><i class="fas fa-home mr-2"></i>Hà Nội, Việt Nam</p>
+                    <p class="text-muted mb-1"><i class="fas fa-envelope mr-2"></i>info@codegym.vn</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 bg-dark text-muted">
+            © 2026 CodeGym Vietnam. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JS SCRIPTS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 </body>
 </html>
